@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@font-face {
+        font-family: gobble;
+        src: url("/fonts/gbold.woff2") format("woff2"), url("gbold.ttf") format("truetype");
+    }
+.global{
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+
+}
+.standardbold{
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    font-weight: 400;
+}
+.gbold{
+       font-family: 'Roboto', sans-serif; 
+font-weight:600;
+
+}
+.githubbold {
+        font-family: 'gobble';
+    }
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    font-weight: 800;
+}
+.texty{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.75em;
+    font-weight: 600;
+}
+body {
+    
+}
+.aaa{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+.bbb{
+     padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+.corn{
+border-radius: 15px;
+    margin-bottom: 3px;
+    margin-right: 2px;
+}
+.smallboi{
+        letter-spacing: -2px;
+}
+.research{
+    background-color: lightblue;
+}
+.fullsendbaby{
+    letter-spacing: 0.5px;
+}
+.fatboi{
+     font-weight: bold;
+}
+.blogy{
+    background-color: #FDD835;
+}
+.pp{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.ab{
+    margin-left: -3px;
+}
+.ccc{
+     padding-top: 25px;
+        padding-left: -5px;
+    padding-bottom: 15px; 
+}
+.techy{
+    background-color: #BCAAA4;
+}
+.orangy{
+    background-color: #D84315;
+    fon
+}
