@@ -1,4 +1,7 @@
-var price = [0];
+var price = [
+        ['input', 'input'],
+        ['input', 'input']
+    ];
 
 function setup() {
     fetchData();
@@ -40,7 +43,7 @@ function gotData(data) {
     print(data);
     for (int count = 0; count < data.length; count++) {
 
-        price.push(data[0].price_usd);
+        price.push(data[count].price_usd);
         if (price[price.length - 2] < price[price.length - 1])
             console.log("BITCOIN HAS GONE UP!");
         console.log(data[0].price_usd);
