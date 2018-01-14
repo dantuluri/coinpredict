@@ -43,10 +43,15 @@ function gotData(data) {
     for (count = 0; count < 40; count++) {
 
         price[count].push(data[count].price_usd);
-        if (price[count][price.length - 2] < price[count][price.length - 1])
+        if (price[count][price.length - 2] < price[count][price.length - 1]) {
+            var colorId = "number" + (count + 1);
+            document.getElementById("" + colorId).style.color = "green";
             console.log("green");
-        else if (price[count][price.length - 2] > price[count][price.length - 1])
+        } else if (price[count][price.length - 2] > price[count][price.length - 1]) {
+            var colorId = "number" + (count + 1);
+            document.getElementById("" + colorId).style.color = "green";
             console.log("red");
+        }
         console.log(data[count].price_usd);
         var numberId = "number" + (count + 1);
         var wordId = "word" + (count + 1);
