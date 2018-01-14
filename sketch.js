@@ -13,8 +13,10 @@ function setup() {
     for (n = 0; n < 20; n++) {
         price.push([]);
     }
-    fetchData();
+    //console.log(price.toString());
+    //fetchData();
 }
+
 
 
 
@@ -40,10 +42,12 @@ function gotData(data) {
     print(data);
     for (count = 0; count < 20; count++) {
 
-        price.push(data[count].price_usd);
-        if (price[price.length - 2] < price[price.length - 1])
-            console.log("BITCOIN HAS GONE UP!");
-        console.log(data[0].price_usd);
+        price[count].push(data[count].price_usd);
+        if (price[count][price.length - 2] < price[count][price.length - 1])
+            console.log("green");
+        else if (price[count][price.length - 2] > price[count][price.length - 1])
+            console.log("red");
+        console.log(data[count].price_usd);
         //document.getElementById("number" + ).innerHTML = data[0].price_usd;
 
     }
