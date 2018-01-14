@@ -25,7 +25,7 @@ function gotData(data) {
     if (price[price.length - 2] < price[price.length - 1])
         console.log("BITCOIN HAS GONE UP!");
     console.log(data[0].price_usd);
-
+    document.getElementById("bitcoindemo").innerHTML = data[0].price_usd;
 }
 
 
