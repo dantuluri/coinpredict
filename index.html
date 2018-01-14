@@ -949,6 +949,7 @@
 
 
         function fetchData() { //  create a loop function
+            loadJSON("https://api.coinmarketcap.com/v1/ticker/?start=0&limit=40", gotData);
             console.log("fetch data");
             i = 1;
             setTimeout(function() { //  call a 3s setTimeout when the loop is called
@@ -968,6 +969,7 @@
         function gotData(data) {
 
             print(data);
+            console.log(price);
             for (count = 0; count < 40; count++) {
 
                 price[count].push(data[count].price_usd);
