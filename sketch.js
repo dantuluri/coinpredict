@@ -13,8 +13,8 @@ function setup() {
     for (n = 0; n < 20; n++) {
         price.push([]);
     }
-    //console.log(price.toString());
-    //fetchData();
+    console.log(price.toString());
+    fetchData();
 }
 
 
@@ -50,8 +50,10 @@ function gotData(data) {
         console.log(data[count].price_usd);
         var numberId = "number" + count;
         var wordId = "word" + count;
-        document.getElementById(numberId).innerHTML = data[count].price_usd;
-        document.getElementById(wordId).innerHTML = data[count].price_usd;
+        console.log(numberId);
+        console.log(wordId);
+        document.getElementById("" + numberId).innerHTML = data[count].price_usd;
+        document.getElementById("" + wordId).innerHTML = data[count].name;
 
 
     }
