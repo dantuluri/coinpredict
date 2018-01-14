@@ -1,10 +1,16 @@
+/*
+ * sketch.js
+ * @author Surya Dantuluri
+ * Remember to change loop from n to limit cap
+ */
 var price = [
-        [0, 0],
-        [0, 0]
+        [],
+        []
     ];
 
 function setup() {
-    fetchData();
+    for (int n = 0; n < )
+        fetchData();
 }
 
 
@@ -18,19 +24,7 @@ function fetchData() { //  create a loop function
         i++; //  increment the counter
         if (i > 0) { //  if the counter < 10, call the loop function
 
-
-
-
-
-
-
-
-
             fetchData(); //  ..  again which will trigger another 
-
-
-
-
 
         } //  ..  setTimeout()
     }, 6000)
