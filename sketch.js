@@ -10,6 +10,7 @@ var price = [
     ];
 
 function setup() {
+    console.log("sketch js enter");
     for (n = 0; n < 40; n++) {
         price.push([]);
     }
