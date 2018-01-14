@@ -1,6 +1,6 @@
 var price = [
-        ['input', 'input'],
-        ['input', 'input']
+        [0, 0],
+        [0, 0]
     ];
 
 function setup() {
