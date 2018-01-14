@@ -21,6 +21,8 @@ function fetchData() { //  create a loop function
 function gotData(data) {
     print(data);
     price.push(data[0].price_usd);
+    if (price[price.length - 2] < price[price.length - 1])
+        console.log("BITCOIN HAS GONE UP!");
     console.log(data[0].price_usd);
 
 }
