@@ -3,14 +3,17 @@
  * @author Surya Dantuluri
  * Remember to change loop from n to limit cap
  */
+
 var price = [
         [],
         []
     ];
 
 function setup() {
-    for (int n = 0; n < )
-        fetchData();
+    for (n = 0; n < 20; n++) {
+        price.push([]);
+    }
+    fetchData();
 }
 
 
@@ -35,13 +38,13 @@ function fetchData() { //  create a loop function
 function gotData(data) {
 
     print(data);
-    for (int count = 0; count < data.length; count++) {
+    for (count = 0; count < 20; count++) {
 
         price.push(data[count].price_usd);
         if (price[price.length - 2] < price[price.length - 1])
             console.log("BITCOIN HAS GONE UP!");
         console.log(data[0].price_usd);
-        document.getElementById("number" + ).innerHTML = data[0].price_usd;
+        //document.getElementById("number" + ).innerHTML = data[0].price_usd;
 
     }
 
