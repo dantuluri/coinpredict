@@ -950,11 +950,11 @@
 
 
         function fetchData() { //  create a loop function
-            loadJSON("https://api.coinmarketcap.com/v1/ticker/?start=0&limit=40", gotData);
+            loadJSON("https://api.coinmarketcap.com/v1/ticker/?start=0&limit=40", gauthamGetData);
             console.log("fetch data");
             i = 1;
             setTimeout(function() { //  call a 3s setTimeout when the loop is called
-                loadJSON("https://api.coinmarketcap.com/v1/ticker/?start=0&limit=40", gotData);
+                loadJSON("https://api.coinmarketcap.com/v1/ticker/?start=0&limit=40", gauthamGetData);
                 //  your code here
                 i++; //  increment the counter
                 if (i > 0) { //  if the counter < 10, call the loop function
@@ -967,7 +967,7 @@
 
 
 
-        function gotData(data) {
+        function gauthamGetData(data) {
 
             //print(data);
             //console.log(price);
