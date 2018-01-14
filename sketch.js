@@ -7,6 +7,7 @@ function setup() {
 
 
 function fetchData() { //  create a loop function
+    console.log("fetch data");
     i = 1;
     setTimeout(function () { //  call a 3s setTimeout when the loop is called
         loadJSON("https://api.coinmarketcap.com/v1/ticker/?start=0&limit=1", gotData);
@@ -15,7 +16,7 @@ function fetchData() { //  create a loop function
         if (i > 0) { //  if the counter < 10, call the loop function
             fetchData(); //  ..  again which will trigger another 
         } //  ..  setTimeout()
-    }, 15000)
+    }, 6000)
 }
 
 function gotData(data) {
