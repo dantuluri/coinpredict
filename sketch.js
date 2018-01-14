@@ -48,7 +48,11 @@ function gotData(data) {
         else if (price[count][price.length - 2] > price[count][price.length - 1])
             console.log("red");
         console.log(data[count].price_usd);
-        //document.getElementById("number" + ).innerHTML = data[0].price_usd;
+        var numberId = "number" + count;
+        var wordId = "word" + count;
+        document.getElementById(numberId).innerHTML = data[count].price_usd;
+        document.getElementById(wordId).innerHTML = data[count].price_usd;
+
 
     }
 
